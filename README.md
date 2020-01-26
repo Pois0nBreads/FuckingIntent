@@ -3,8 +3,11 @@ none
 
 
 安装后可以使Chrome，UC等不允许通过设置iframe的src属性来启动Android应用的浏览器，兼容百度贴吧手机APP的唤醒和跳转。
+
 大致原理就是制作一个兼容http scheme的APP来间接的唤醒百度贴。
+
 可以说这个软件就是一个协议适配器（Adapter）了 _(:з」∠)_
+
 祝大家用的开心 #如果可以，请赏我杯饮料喝 谢谢 https://pois0nbreads.github.io/Breads/
 
 以下摘自[chrome 开发文档]( https://developer.chrome.com/multidevice/android/intents)，明确说了 chrom25+以后不支持 url scheme
