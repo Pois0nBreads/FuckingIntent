@@ -12,48 +12,39 @@
         <activity
             android:name=".ViewActivity"
             android:icon="@mipmap/icon"
-            android:label="百度贴吧">
-            ​<intent-filter>
-            <action android:name="android.intent.action.VIEW">
-            </action>
-            <category android:name="android.intent.category.DEFAULT">
-            </category>
-            <category android:name="android.intent.category.BROWSABLE" >
-            </category>
+            android:label="百度贴吧"><intent-filter>
+            <action android:name="android.intent.action.VIEW"></action>
+
+            <category android:name="android.intent.category.DEFAULT"></category>
+            <category android:name="android.intent.category.BROWSABLE"></category>
+
             <data
-                android:scheme="http"
                 android:host="tieba.baidu.com"
-                android:pathPattern="/p/.*">
-            </data>
+                android:pathPattern="/p/.*"
+                android:scheme="http"></data>
             <data
-                android:scheme="https"
                 android:host="tieba.baidu.com"
-                android:pathPattern="/p/.*">
-            </data>
+                android:pathPattern="/p/.*"
+                android:scheme="https"></data>
             <data
-                android:scheme="http"
                 android:host="m.baidu.com"
-                android:pathPattern="/p/.*">
-            </data>
+                android:pathPattern="/p/.*"
+                android:scheme="http"></data>
             <data
-                android:scheme="https"
                 android:host="m.baidu.com"
-                android:pathPattern="/p/.*">
-            </data>
+                android:pathPattern="/p/.*"
+                android:scheme="https"></data>
             <data
-                android:scheme="http"
                 android:host="tieba.baidu.com"
-                android:pathPattern="/f">
-            </data>
+                android:pathPattern="/f"
+                android:scheme="http"></data>
             <data
-                android:scheme="https"
                 android:host="tieba.baidu.com"
-                android:pathPattern="/f">
-            </data>
+                android:pathPattern="/f"
+                android:scheme="https"></data>
         </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
-
         </activity>
     </application>
 
