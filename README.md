@@ -8,6 +8,8 @@ none
 
 可以说这个软件就是一个协议适配器（Adapter）了 _(:з」∠)_
 
+下载地址：https://github.com/Pois0nBreads/FuckingIntent/releases/download/v1.0/FuckIntent-v1.0.apk
+
 祝大家用的开心 #如果可以，请赏我杯饮料喝 谢谢 https://pois0nbreads.github.io/Breads/
 
 以下摘自[chrome 开发文档]( https://developer.chrome.com/multidevice/android/intents)，明确说了 chrom25+以后不支持 url scheme
