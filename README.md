@@ -6,7 +6,7 @@ none
 
 大致原理就是制作一个兼容http scheme的APP来间接的唤醒百度贴。
 
-可以说这个软件就是一个协议适配器（Adapter）了 /_(:з」∠)/_
+可以说这个软件就是一个协议适配器（Adapter）了 \_(:з」∠)\_
 
 下载地址：https://github.com/Pois0nBreads/FuckingIntent/releases
 
