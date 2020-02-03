@@ -9,6 +9,7 @@ none
 可以说这个软件就是一个协议适配器（Adapter）了 _(:з」∠)_
 
 下载地址：https://github.com/Pois0nBreads/FuckingIntent/releases
+
 蓝奏云分流：https://www.lanzous.com/b0c23usof 密码:i300 如果Github下载过慢可以用这个
 
 祝大家用的开心 #如果可以，请赏我杯饮料喝 谢谢 https://afdian.net/@Pois0nBread
