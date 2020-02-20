@@ -1,4 +1,4 @@
-package net.pois0nbread.fuckingintent;
+package net.pois0nbread.fffintent;
 
 import android.content.Context;
 

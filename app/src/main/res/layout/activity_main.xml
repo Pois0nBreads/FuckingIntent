@@ -1,107 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/main_lc"
-        android:layout_margin="8dp"
-        android:background="@drawable/button_bg"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_margin="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="80px"
-            android:text="使用说明"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <View
-            android:background="#AAAAAAAA"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
-
-        <TextView
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:textSize="50px"
-            android:textColor="@android:color/black"
-            android:text="安装后可以使Chrome，UC等不允许通过设置iframe的src属性来启动Android应用的浏览器，兼容百度贴吧手机APP的唤醒和跳转。
+            android:background="@drawable/button_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="使用说明"
+                android:textColor="@android:color/black"
+                android:textSize="65px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
+
+            <TextView
+                android:id="@+id/main_useinfo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="点击查看使用说明"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="解码设置"
+                android:textColor="@android:color/black"
+                android:textSize="65px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
+
+            <Switch
+                android:id="@+id/main_gbkenable_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="使用GBK解码 (默认使用UTF-8)"
+                android:textColor="@android:color/black"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="如果出现乱码请打开这个选项"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="关于软件"
+                android:textColor="@android:color/black"
+                android:textSize="65px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="安装后可以使Chrome，UC等不允许通过设置iframe的src属性来启动Android应用的浏览器，兼容百度贴吧手机APP的唤醒和跳转。
                                 \n
-                                \n大致原理就是制作一个兼容http scheme的APP来间接的唤醒百度贴。
+                                \n大致原理就是制作一个兼容http scheme的APP来间接的唤醒百度贴吧。
                                 \n
-                                \n可以说这个软件就是一个协议适配器（Adapter）了 (:з」∠)
+                                \n可以说这个软件就是一个适配器了 _(:з」∠)_
                                 \n
                                 \n祝大家用的开心
                                 \n
                                 \nchrome 开发文档，明确说了 chrom25+以后不支持 url scheme (辣鸡度娘 @w@)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+                android:textColor="@android:color/black"
+                android:textSize="40px" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <View
-            android:background="#AAAAAAAA"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
 
-        <TextView
-            android:id="@+id/main_button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="40px"
-            android:textColor="@android:color/black"
-            android:text="作者：酷安@Pois0nBread (求关注)"/>
+            <TextView
+                android:id="@+id/main_developerinfo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="作者：酷安@Pois0nBread (求关注)"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40px" />
 
-        <View
-            android:background="#AAAAAAAA"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/main_otherdeveloperinfo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="分享功能由：酷安@队长康纳 提供思路"
+                android:textColor="@color/colorPrimary"/>
 
-        <TextView
-            android:id="@+id/main_button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="40px"
-            android:textColor="@android:color/black"
-            android:text="版本 V1.1 - 点击查看源代码"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
 
-        <View
-            android:background="#AAAAAAAA"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/main_pypay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="赞助支持作者 _(:з」∠)_"
+                android:textColor="@color/colorPrimary"
+                android:textSize="50px" />
 
-        <TextView
-            android:id="@+id/main_button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="40px"
-            android:textColor="@android:color/black"
-            android:text="打赏一下秃头作者 _(:з」∠)_"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
 
-        <View
-            android:background="#AAAAAAAA"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/main_github_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="版本 V2.0 - 点击查看源代码"
+                android:textColor="@color/colorPrimary"
+                android:textSize="40px" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/black"
-            android:text="本程序遵守GNU协议，请勿用于商业用途"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#AAAAAAAA" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="本程序遵守GNU协议，请勿用于商业用途"
+                android:textColor="@android:color/holo_red_dark" />
 
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
 
-</androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</ScrollView>
